@@ -27,9 +27,10 @@ Built-in playwright locators
  5. getByTitle()
       used to locate the element using title attribute
       title attribute used in tooltip when you mouse hover on the element
- 6. getByRole()
-     
+ 6. getByRole()   
+        
        page.getByRole(Aria Role,{name:'accessiable name'})
  7. getByTestID
         used to locate the element using data-testid attribute
 
+===========
