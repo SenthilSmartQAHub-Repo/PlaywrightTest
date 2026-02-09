@@ -11,6 +11,4 @@ test("Locate the element using getByPlaceholder attribute",async({page})=>{
 
     await page.waitForTimeout(5000)
 
-
 })
-

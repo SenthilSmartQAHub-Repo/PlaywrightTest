@@ -20,10 +20,16 @@ Built-in playwright locators
        it can locate complete alt text or partial alt text by default
        To find complete alt text we use exact property
  4. getByLabel()
+       Used to locate the element using 
+       1. aria-label attribute
+       2. We can use label text when element html Label for='id" reference input id 
+       3. We can use label text when Wrapped label element present in <label> tag
  5. getByTitle()
       used to locate the element using title attribute
       title attribute used in tooltip when you mouse hover on the element
  6. getByRole()
+     
+       page.getByRole(Aria Role,{name:'accessiable name'})
  7. getByTestID
         used to locate the element using data-testid attribute
 
