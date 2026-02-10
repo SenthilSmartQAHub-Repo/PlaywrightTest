@@ -33,4 +33,4 @@ Built-in playwright locators
  7. getByTestID
         used to locate the element using data-testid attribute
 
-===========
+===========                   
