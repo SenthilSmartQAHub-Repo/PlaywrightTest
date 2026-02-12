@@ -96,3 +96,71 @@ await page.locator("(//input[@class='user'])[last()])
       Position starts from 1 (Not from 0)
 
  await page.locator("(//input[@class='user'])[position()=2])
+
+
+Wildcards in xpath
+==================
+
+Any Element(*)
+=============
+
+ <input type='text' placeholder='username'>
+
+//input[@placeholder='username']
+
+//*[@placeholder='username']
+//*[@placeholder='Enter Serial Number']
+
+Any Attribute(@*)
+===============
+
+//*[@*='Enter Serial Number']
+
+
+Xpath Axes:
+===========
+
+
+Parent node:
+
+.. --> Immediate parent node
+
+/.. or /parent::parenttagname
+
+Child node:
+/tagname  or /child::childtagname
+
+(//*[text()='Register Modem']/../input)[1]
+
+
+(//*[text()='Register Modem']/parent::div/child::input)[2]
+
+
+Following-sibling
+    selects all siblings after the current node
+   
+   //xpath by attribute or any function/following-sibling::tagname
+
+//*[text()='Modem Serial Number']/following-sibling::input
+
+Preceding-sibling
+       selecrs all sibling before the current node
+(//*[text()='Register Modem']/preceding-sibling::input)[1]
+
+
+Ancestor Axis:
+
+selects parent, grandparent etc
+
+//*[text()='Register Modem']/ancestor::div/div[@class='form-box']/button
+
+
+Descendant Axis
+
+selects child, grandchild
+
+//*[@id='modemRegister']/descendant::option
+
+
+
+
