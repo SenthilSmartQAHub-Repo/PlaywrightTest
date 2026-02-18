@@ -1,4 +1,4 @@
-import test from "@playwright/test";
+import test, { expect } from "@playwright/test";
 
 test("Locate the element using getbyText()",async({page})=>{
 
@@ -17,6 +17,6 @@ test("locate the API link", async({page})=>{
     await page.goto("https://playwright.dev/java/")
 
     await page.getByText("API",{exact:true}).click()
-
      await page.waitForTimeout(5000)
 })
+
