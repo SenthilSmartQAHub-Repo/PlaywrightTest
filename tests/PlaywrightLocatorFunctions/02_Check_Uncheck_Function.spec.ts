@@ -1,4 +1,4 @@
-import test from "@playwright/test";
+import test, { expect } from "@playwright/test";
 
 test("check function",async({page})=>{
 
@@ -14,6 +14,8 @@ test("check function",async({page})=>{
    //   await page.locator("#agreeCheck").check()
 
     await page.locator("#agreeCheck").uncheck()
+
+    await expect(page.locator("#agreeCheck")).toBeDisabled()
 
         await page.waitForTimeout(5000)
 })

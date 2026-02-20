@@ -23,7 +23,30 @@ Playwright Locator Functions
             <input type='checkbox'>
             <input type='radio'>
  5.  uncheck()  - used to uncheck the checkbox
-     supported elements:
+     supported elements:  
          <input type='checkbox'>
 
-   
+ 6. inputValue()
+
+      used to get the current value from the textbox or multiline textbox
+
+      note: Set a value -  use fill()
+            read a value - use inputValue()
+
+ 7. getAttribute()
+    
+     used to get the value of the specific attribute from the element
+      
+      - href
+      - src
+      - value
+      - type
+      - placeholder
+      - id
+      - class
+      - disabled
+
+      syntax: getAttribute(attributeName)  it will return the respective attribute value
+
+   <tagname attributename='attributevalue' attributename='attributevalue' attributename='attributevalue' >
+
