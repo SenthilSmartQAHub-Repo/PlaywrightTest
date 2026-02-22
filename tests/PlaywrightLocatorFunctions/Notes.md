@@ -98,7 +98,12 @@ Scenarios:
             <input type='checkbox'>
             <input type='radio'>
 
+13. textContent()  --> use when you need all text(both visible and hidden)
+        used to get the text of the element
+     innerText()  --> use when you need visible text
+     innerHTML()  --> use when you need all text with html code.
 
+     
 
 
    
